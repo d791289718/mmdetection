@@ -192,7 +192,8 @@ def show_result_pyplot(img,
         out_file (str, optional): If specified, the visualization result will
             be written to the out file instead of shown in a window.
     """
-    img = show_result(
-        img, result, class_names, score_thr=score_thr, show=False)
-    plt.figure(figsize=fig_size)
-    plt.imshow(mmcv.bgr2rgb(img))
+    # img = show_result(
+    #    img, result, class_names, score_thr=score_thr, show=False)
+    # plt.figure(figsize=fig_size)
+    # plt.imshow(mmcv.bgr2rgb(img))
+    # plt.imwrite(mmcv.bgr2rgb(img))

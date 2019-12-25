@@ -46,7 +46,8 @@ class CustomDataset(Dataset):
         self.data_root = data_root
         self.img_prefix = img_prefix
         self.seg_prefix = seg_prefix
-        self.proposal_file = proposal_file
+        # self.proposal_file = proposal_file
+        self.proposal_file = None
         self.test_mode = test_mode
         self.filter_empty_gt = filter_empty_gt
 
