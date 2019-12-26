@@ -26,6 +26,7 @@ class CocoDataset(CustomDataset):
     def load_annotations(self, ann_file):
         self.coco = COCO(ann_file)
         self.cat_ids = self.coco.getCatIds()
+        assert(self.cat_ids != {})
         self.cat2label = {
             cat_id: i + 1
             for i, cat_id in enumerate(self.cat_ids)

@@ -1,5 +1,6 @@
 from .builder import build_dataset
 from .cityscapes import CityscapesDataset
+from .DOTA import DOTADataset
 from .coco import CocoDataset
 from .custom import CustomDataset
 from .dataset_wrappers import ConcatDataset, RepeatDataset
@@ -10,7 +11,7 @@ from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
 
 __all__ = [
-    'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',
+    'DOTADataset', 'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',
     'CityscapesDataset', 'GroupSampler', 'DistributedGroupSampler',
     'build_dataloader', 'ConcatDataset', 'RepeatDataset', 'WIDERFaceDataset',
     'DATASETS', 'build_dataset'
